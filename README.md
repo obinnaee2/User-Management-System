@@ -4,21 +4,32 @@ This repository contains a RESTful API implemented in Java using Spring Boot for
 
 Endpoints
 GET /api/users: Retrieves a list of all users.
+
 GET /api/users/{userId}: Retrieves details of a specific user by ID.
+
 POST /api/users: Adds a new user. Requires a JSON payload with user details.
+
 PUT /api/users/{userId}: Updates an existing user's details. Requires a JSON payload with updated user information.
+
 DELETE /api/users/{userId}: Deletes a user by ID.
+
 PATCH /api/users/{userId}: Partially updates a user's details based on provided fields in the request body.
+
 HEAD /api/users/{userId}: Checks for the existence of a user by ID without fetching the full resource.
+
 OPTIONS /api/users/{userId}: Retrieves the HTTP methods supported for a user resource.
 
 Error Handling
+
 The API returns appropriate HTTP status codes and messages, including 404 Not Found for resources that do not exist.
+
 Input validation is handled using Jakarta Bean Validation (@Valid annotation) for request bodies.
 
 Technologies Used
 Spring Framework: For dependency injection and MVC architecture.
+
 Jakarta Bean Validation: For validating input data.
+
 Postman: For unit testing.
 
 Usage:
